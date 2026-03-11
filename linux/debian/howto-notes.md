@@ -44,6 +44,25 @@ Pro výměnu klíčů a nastavení bezheslového přihlašování můžete použ
 
 Z bezpečnostních důvodů je důležité, aby byl váš soukromý klíč chráněn heslem a uložen na bezpečném místě.
 
+<!-- raw-note:031338d8eb60 -->
+### Curated notes
+
+### Basic SSH Config
+
+Základní SSH config ukázky
+
+### Advanced SSH Config
+
+Pokročilé varianty
+
+### Troubleshooting
+
+Diagnostické a opravné kroky
+
+### Common Mistakes
+
+Časté chyby a anti-patterny
+
 ## Advanced
 
 <!-- Pokročilé varianty -->
