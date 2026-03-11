@@ -33,6 +33,17 @@ Z bezpečnostních důvodů je důležité, aby byl váš soukromý klíč (id_r
 
 Pokud chcete automatizovat tento proces pro více zařízení, můžete použít skript, který bude iterovat přes seznam IP adres a uživatelů, nicméně to již vyžaduje znalost programování a práce se skripty.
 
+<!-- raw-note:81a6785b9a76 -->
+### Curated notes
+
+### Bezheslové přihlášení
+
+Pro výměnu klíčů a nastavení bezheslového přihlašování můžete použít ssh-copy-id. Pokud nemáte vygenerovaný žádný SSH klíč, můžete jej vytvořit pomocí ssh-keygen.
+
+### Zabezpečení
+
+Z bezpečnostních důvodů je důležité, aby byl váš soukromý klíč chráněn heslem a uložen na bezpečném místě.
+
 ## Advanced
 
 <!-- Pokročilé varianty -->
