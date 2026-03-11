@@ -13,6 +13,10 @@ lspci -k
 lsmod
 uname -a
 systemd-analyze
+ssh-copy-id username@ip_adresa
+ssh-keygen
+ssh username@ip_adresa
+ssh debian
 ```
 ## Advanced
 
