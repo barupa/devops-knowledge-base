@@ -13,6 +13,13 @@ Průběžně ukládané praktické poznámky z raw LLM odpovědí.
 
 Spuštění kontejneru bez specifikace portů, nepoužití -it při spuštění kontejneru pro interaktivní shell, nesprávná konfigurace sítě kontejneru.
 
+<!-- raw-note:89096601a33a -->
+### Curated notes
+
+### Common Mistakes
+
+Spuštění kontejneru bez specifikace portů, nepoužití -it při spuštění kontejneru pro interaktivní shell, nesprávná konfigurace sítě kontejneru
+
 ## Advanced
 
 <!-- Pokročilé varianty -->
