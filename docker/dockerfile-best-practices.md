@@ -4,7 +4,7 @@ Průvodce psaním efektivních a bezpečných Dockerfilů.
 
 ## Basic
 
-Základní Docker příkazy:
+- Build, run a základní životní cyklus kontejneru.
 
 ```bash
 # Sestavení image
@@ -25,7 +25,7 @@ docker rm myapp
 
 ## Advanced
 
-Multi-stage build pro menší image:
+- Diagnostika image a práce s build stages.
 
 ```bash
 # Sestavení pouze produkční stage
@@ -39,6 +39,8 @@ docker images myapp:latest
 ```
 
 ## Troubleshooting
+
+- Logy, inspekce a shell uvnitř běžícího kontejneru.
 
 ```bash
 # Zobrazení logů kontejneru
@@ -56,7 +58,7 @@ docker exec -it myapp /bin/sh
 
 ## Common Mistakes
 
-- Používání tagu `latest` v produkci — vždy pinujte konkrétní verze.
-- Spouštění jako root uvnitř kontejnerů — použijte direktivu `USER`.
-- Neuvedení `.dockerignore` — vždy vylučte `node_modules`, `.git` atd.
-- Kopírování celého kontextu — používejte specifické cesty v `COPY`.
+- Nepoužívejte `latest` v produkci, pinujte verze.
+- Nespouštějte app jako root (`USER`).
+- Udržujte `.dockerignore` aktuální.
+- Nezahrnujte zbytečný build kontext do `COPY`.

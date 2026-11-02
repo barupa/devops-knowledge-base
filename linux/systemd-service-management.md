@@ -1,10 +1,10 @@
 # Systemd Service Management
 
-Správa Linux služeb pomocí systemctl.
+Správa Linux služeb pomocí `systemctl` a `journalctl`.
 
 ## Basic
 
-Nejpoužívanější systemctl příkazy:
+- Start/stop, enable/disable a reload systemd konfigurace.
 
 ```bash
 # Zobrazení stavu služby
@@ -28,6 +28,8 @@ systemctl daemon-reload
 
 ## Advanced
 
+- Výpis aktivních služeb, závislostí a živých logů.
+
 ```bash
 # Výpis všech aktivních služeb
 systemctl list-units --type=service --state=active
@@ -44,6 +46,8 @@ journalctl -u nginx -b
 
 ## Troubleshooting
 
+- Diagnostika failnutých služeb a validace unit souborů.
+
 ```bash
 # Zobrazení neúspěšných služeb
 systemctl --failed
@@ -57,6 +61,6 @@ systemd-analyze verify /etc/systemd/system/myapp.service
 
 ## Common Mistakes
 
-- Zapomenutí `daemon-reload` po editaci unit souborů.
-- Nastavení `Restart=always` bez `RestartSec` — může způsobit restart smyčku.
-- Neuvedení `After=network.target` pro síťově závislé služby.
+- Po změně unit souboru chybí `daemon-reload`.
+- `Restart=always` bez `RestartSec` může vytvořit restart smyčku.
+- Pro síťové služby často chybí `After=network.target`.

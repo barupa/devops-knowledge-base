@@ -1,23 +1,19 @@
 # Docker Command Bank
 
-Automaticky generovaná banka příkazů z LLM odpovědí (AnythingLLM/Gemini).
-Agent deduplikuje příkazy napříč celou knowledge base.
+Krátká banka nejpoužívanějších Docker příkazů.
 
 ## Basic
 
-<!-- Příkazy pro běžné použití -->
+- Výpis lokálně dostupných image.
 
 ```bash
 docker images
 ```
-## Advanced
-
-<!-- Volitelné pokročilé příkazy -->
 
 ## Troubleshooting
 
-<!-- Diagnostické a opravné kroky -->
+- Pokud se image nezobrazuje, ověřte správný Docker context/daemon.
 
 ## Common Mistakes
 
-<!-- Časté chyby a anti-patterny -->
+- Záměna image (`docker images`) a kontejnerů (`docker ps`).

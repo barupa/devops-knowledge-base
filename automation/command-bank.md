@@ -1,23 +1,19 @@
 # Automation Command Bank
 
-Automaticky generovaná banka příkazů z LLM odpovědí (AnythingLLM/Gemini).
-Agent deduplikuje příkazy napříč celou knowledge base.
+Rychlé příkazy pro běžnou automatizaci.
 
 ## Basic
 
-<!-- Příkazy pro běžné použití -->
+- Kontrola dostupnosti Kubernetes uzlů.
 
 ```bash
 kubectl get nodes
 ```
-## Advanced
-
-<!-- Volitelné pokročilé příkazy -->
 
 ## Troubleshooting
 
-<!-- Diagnostické a opravné kroky -->
+- Když příkaz vrací chybu přístupu, ověřte aktivní `kubeconfig` a context.
 
 ## Common Mistakes
 
-<!-- Časté chyby a anti-patterny -->
+- Spouštění příkazů proti špatnému clusteru/contextu.

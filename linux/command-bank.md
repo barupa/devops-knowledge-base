@@ -1,23 +1,19 @@
 # Linux Command Bank
 
-Automaticky generovaná banka příkazů z LLM odpovědí (AnythingLLM/Gemini).
-Agent deduplikuje příkazy napříč celou knowledge base.
+Krátká banka základních Linux příkazů.
 
 ## Basic
 
-<!-- Příkazy pro běžné použití -->
+- Aktualizace balíčků na Debian/Ubuntu.
 
 ```bash
 sudo apt update
 ```
-## Advanced
-
-<!-- Volitelné pokročilé příkazy -->
 
 ## Troubleshooting
 
-<!-- Diagnostické a opravné kroky -->
+- Při chybách repozitářů zkontrolujte `sources.list` a síť.
 
 ## Common Mistakes
 
-<!-- Časté chyby a anti-patterny -->
+- `apt update` bez následného `apt upgrade`, když je cílem patching.
